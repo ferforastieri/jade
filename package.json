@@ -1,0 +1,21 @@
+{
+  "name": "jade",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && wrangler dev --port 8790",
+    "build": "vite build",
+    "preview": "npm run build && wrangler dev --port 8790",
+    "db:local": "wrangler d1 migrations apply jade --local",
+    "db:remote": "wrangler d1 migrations apply jade --remote",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "wrangler": "^4.39.0"
+  }
+}

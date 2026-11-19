@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo de Jade</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="night"></div>
-  <div class="stars"></div>
-  <div class="container">
-    <h1>Bem-vinda ao Seu Mundo, Jade!</h1>
-    <button onclick="window.location.href='menu.html'">Entrar no Mundo da Jade</button>
-    <button onclick="window.location.href='original.html'">Ver Flores Especiais</button>
-  </div>
-  <script src="stars.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#26374b" />
+    <meta name="description" content="Jade é um jardim de memórias: visite homenagens, deixe uma flor e crie um lugar para lembrar de quem você ama." />
+    <meta property="og:title" content="Jade — um jardim de memórias" />
+    <meta property="og:description" content="Uma sala, uma história, uma flor. Memórias que encontram lugar para florescer." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Jade — um jardim de memórias</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="announcer" class="sr-only" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,2 @@
+# Gere um valor aleatório local; não reutilize o segredo de produção.
+PASSWORD_PEPPER=replace-with-a-random-secret-of-at-least-40-characters
